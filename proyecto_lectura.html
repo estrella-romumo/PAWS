@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Compendio de Lecturas - CENTRO</title>
+    <style>
+        body {
+            background: url('4.jpeg') center/cover no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 20px;
+        }
+
+        .lectura-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8); /* Light pink with transparency */
+            padding: 30px;
+            border-radius: 15px;
+            width: 70%; /* Adjust width as needed */
+            max-width: 600px; /* Max width for better readability */
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        .lectura-container img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .descripcion-lectura {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: black;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px; /* Space between buttons */
+            margin-top: 30px;
+        }
+
+        .action-button {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .regresar-button {
+            background-color: #6c757d; /* Gray */
+        }
+
+        .regresar-button:hover {
+            background-color: #545b62; /* Darker gray on hover */
+        }
+
+        .pdf-button {
+            background-color: #28a745; /* Green */
+        }
+
+        .pdf-button:hover {
+            background-color: #218838; /* Darker green on hover */
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compendio de Lecturas del Semestre</h1>
+    <div class="lectura-container">
+        <img src="libro.jpg" alt="Proyecto de lectura">
+        <div class="descripcion-lectura">
+            Este semestre tuvimos la oportunidad de sumergirnos en un compendio de lecturas fascinantes. Las obras exploradas fueron muy interesantes y nos brindaron nuevas perspectivas. Fue una actividad diferente y enriquecedora que nos permitió expandir nuestros horizontes de conocimiento. ¡Disfrutamos mucho de esta experiencia de lectura!
+        </div>
+    </div>
+    <div class="button-group">
+        <button class="action-button pdf-button" onclick="window.open('compendio-lecturas.pdf', '_blank')">Ver Compendio (PDF)</button>
+        <button class="action-button regresar-button" onclick="location.href='2p.html'">Regresar</button>
+    </div>
+</body>
+</html>
