@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Venta de Borregos - CENTRO</title>
+    <style>
+        body {
+            background: url('4.jpeg') center/cover no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 20px;
+        }
+
+        .fila-borregos {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .borrego-en-venta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .borrego-en-venta img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .descripcion-borrego {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .precio-borrego {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6f42c1; 
+            margin-bottom: 15px;
+        }
+
+        .boton-comprar {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #e83e8c; 
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-comprar:hover {
+            background-color: #c82333;
+        }
+
+        .regresar-button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .regresar-button:hover {
+            background-color: #545b62;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nuestros Borregos a la Venta!</h1>
+    <div class="fila-borregos">
+        <div class="borrego-en-venta">
+            <img src="merino.jpeg" alt="Borrego Merino">
+            <div class="descripcion-borrego">
+                <strong>Merino</strong><br>
+                Conocido por su lana fina y suave de alta calidad.<br>
+                Excelente para la produccion de textiles.
+            </div>
+            <p class="precio-borrego">$120 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="borrego-en-venta">
+            <img src="dorper.jpeg" alt="Borrego Dorper">
+            <div class="descripcion-borrego">
+                <strong>Dorper</strong><br>
+                Raza de carne resistente y de bajo mantenimiento.<br>
+                Adaptable a climas diversos.
+            </div>
+            <p class="precio-borrego">$150 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="borrego-en-venta">
+            <img src="suffolk.jpeg" alt="Borrego Suffolk">
+            <div class="descripcion-borrego">
+                <strong>Suffolk</strong><br>
+                Raza de carne popular con crecimiento rapido.<br>
+                Produce canales de alta calidad.
+            </div>
+            <p class="precio-borrego">$140 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="borrego-en-venta">
+            <img src="rambouillet.jpeg" alt="Borrego Rambouillet">
+            <div class="descripcion-borrego">
+                <strong>Rambouillet</strong><br>
+                Doble proposito, buena produccion de lana y carne.<br>
+                Adaptable a diferentes sistemas de manejo.
+            </div>
+            <p class="precio-borrego">$130 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="borrego-en-venta">
+            <img src="texel.jpeg" alt="Borrego Texel">
+            <div class="descripcion-borrego">
+                <strong>Texel</strong><br>
+                Raza de carne magra con excelente conformacion muscular.<br>
+                Muy eficiente en la conversion de alimento.
+            </div>
+            <p class="precio-borrego">$160 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+    </div>
+    <button class="regresar-button" onclick="location.href='2p.html'">Regresar</button>
+</body>
+</html>

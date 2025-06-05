@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Venta de Caballos - CENTRO</title>
+    <style>
+        body {
+            background: url('4.jpeg') center/cover no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            color: white;
+            font-family: sans-serif;
+            padding-top: 20px; 
+        }
+
+        .fila-caballos {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap; 
+            justify-content: center; 
+        }
+
+        .caballo-en-venta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8); 
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px; 
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+        }
+
+        .caballo-en-venta img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            object-fit: cover; 
+        }
+
+        .descripcion-caballo {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .precio-caballo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28a745; 
+            margin-bottom: 15px;
+        }
+
+        .boton-comprar {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #007bff; 
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-comprar:hover {
+            background-color: #0056b3;
+        }
+
+        .regresar-button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #6c757d; 
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .regresar-button:hover {
+            background-color: #545b62;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Encuentra tu Caballo Ideal!</h1>
+    <div class="fila-caballos">
+        <div class="caballo-en-venta">
+            <img src="andaluz.jpeg" alt="Caballo Andaluz">
+            <div class="descripcion-caballo">
+                <strong>Caballo Andaluz</strong><br>
+                Elegante y ágil, originario de la Península Ibérica.<br>
+                Ideal para doma clásica y exhibiciones.
+            </div>
+            <p class="precio-caballo">$15,000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="caballo-en-venta">
+            <img src="espanol.jpeg" alt="Caballo Español">
+            <div class="descripcion-caballo">
+                <strong>Caballo Español (Pura Raza Española)</strong><br>
+                Noble y majestuoso, símbolo de la tradición ecuestre española.<br>
+                Excelente temperamento y versatilidad.
+            </div>
+            <p class="precio-caballo">$18,000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="caballo-en-venta">
+            <img src="arabe.jpeg" alt="Caballo Árabe">
+            <div class="descripcion-caballo">
+                <strong>Caballo Árabe</strong><br>
+                Resistente, inteligente y de gran belleza.<br>
+                Perfecto para carreras de resistencia y paseos.
+            </div>
+            <p class="precio-caballo">$12,000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="caballo-en-venta">
+            <img src="frison.jpeg" alt="Caballo Frisón">
+            <div class="descripcion-caballo">
+                <strong>Caballo Frisón</strong><br>
+                Imponente y elegante, conocido por su pelaje negro lustroso.<br>
+                Ideal para tiro ligero y doma.
+            </div>
+            <p class="precio-caballo">$22,000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="caballo-en-venta">
+            <img src="mustang.jpeg" alt="Mustang">
+            <div class="descripcion-caballo">
+                <strong>Mustang</strong><br>
+                Caballo salvaje y resistente.<br>
+                Excelente para rutas y trabajos en terrenos difíciles.
+            </div>
+            <p class="precio-caballo">$8,000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+    </div>
+    <button class="regresar-button" onclick="location.href='2p.html'">Regresar</button>
+</body>
+</html>

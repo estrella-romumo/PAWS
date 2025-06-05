@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Venta de Vacas - CENTRO</title>
+    <style>
+        body {
+            background: url('4.jpeg') center/cover no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 20px;
+        }
+
+        .fila-vacas {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .vaca-en-venta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .vaca-en-venta img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .descripcion-vaca {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .precio-vaca {
+            font-size: 18px;
+            font-weight: bold;
+            color: #198754; 
+            margin-bottom: 15px;
+        }
+
+        .boton-comprar {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #dc3545;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-comprar:hover {
+            background-color: #c82333;
+        }
+
+        .regresar-button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .regresar-button:hover {
+            background-color: #545b62;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nuestras Vacas a la Venta!</h1>
+    <div class="fila-vacas">
+        <div class="vaca-en-venta">
+            <img src="holstein.jpeg" alt="Vaca Holstein">
+            <div class="descripcion-vaca">
+                <strong>Holstein</strong><br>
+                Conocida por su alta produccion de leche.<br>
+                Ideal para la industria lactea.
+            </div>
+            <p class="precio-vaca">$1800 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="vaca-en-venta">
+            <img src="jersey.jpeg" alt="Vaca Jersey">
+            <div class="descripcion-vaca">
+                <strong>Jersey</strong><br>
+                Produce leche rica en grasa y proteinas.<br>
+                De temperamento docil.
+            </div>
+            <p class="precio-vaca">$2000 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="vaca-en-venta">
+            <img src="angus.jpeg" alt="Vaca Angus">
+            <div class="descripcion-vaca">
+                <strong>Angus</strong><br>
+                Raza de carne de alta calidad y marmoleo.<br>
+                Popular en la produccion de carne premium.
+            </div>
+            <p class="precio-vaca">$2200 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="vaca-en-venta">
+            <img src="hereford.jpeg" alt="Vaca Hereford">
+            <div class="descripcion-vaca">
+                <strong>Hereford</strong><br>
+                Adaptable y resistente, buena para pastoreo.<br>
+                Conocida por su carne de buen sabor.
+            </div>
+            <p class="precio-vaca">$2100 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="vaca-en-venta">
+            <img src="brahman.jpeg" alt="Vaca Brahman">
+            <div class="descripcion-vaca">
+                <strong>Brahman</strong><br>
+                Tolerante al calor y a enfermedades.<br>
+                Utilizada en cruces para mejorar la rusticidad.
+            </div>
+            <p class="precio-vaca">$1900 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+    </div>
+    <button class="regresar-button" onclick="location.href='2p.html'">Regresar</button>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<html>
+<head>
+    <title>Venta de Puerquitos - CENTRO</title>
+    <style>
+        body {
+            background: url('4.jpeg') center/cover no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 20px;
+        }
+
+        .fila-puerquitos {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .puerquito-en-venta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgba(255, 192, 203, 0.8);
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .puerquito-en-venta img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .descripcion-puerquito {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .precio-puerquito {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d63384; 
+            margin-bottom: 15px;
+        }
+
+        .boton-comprar {
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #fd7e14; 
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-comprar:hover {
+            background-color: #ca6f11;
+        }
+
+        .regresar-button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: none;
+            background-color: #6c757d;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .regresar-button:hover {
+            background-color: #545b62;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Adorables Puerquitos en Venta!</h1>
+    <div class="fila-puerquitos">
+        <div class="puerquito-en-venta">
+            <img src="duroc.jpeg" alt="Puerquito Duroc">
+            <div class="descripcion-puerquito">
+                <strong>Duroc</strong><br>
+                Conocido por su rápido crecimiento y carne magra.<br>
+                Excelente para la producción de jamón.
+            </div>
+            <p class="precio-puerquito">$150 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="puerquito-en-venta">
+            <img src="landrace.jpeg" alt="Puerquito Landrace">
+            <div class="descripcion-puerquito">
+                <strong>Landrace</strong><br>
+                De cuerpo largo y alta prolificidad.<br>
+                Ideal para la producción de tocino.
+            </div>
+            <p class="precio-puerquito">$180 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="puerquito-en-venta">
+            <img src="pietrain.jpeg" alt="Puerquito Pietrain">
+            <div class="descripcion-puerquito">
+                <strong>Pietrain</strong><br>
+                Musculoso y con alto rendimiento de carne magra.<br>
+                Popular en la producción de carne de cerdo de calidad.
+            </div>
+            <p class="precio-puerquito">$160 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="puerquito-en-venta">
+            <img src="hampshire.jpeg" alt="Puerquito Hampshire">
+            <div class="descripcion-puerquito">
+                <strong>Hampshire</strong><br>
+                Magro y musculoso, con una característica banda blanca.<br>
+                Buen crecimiento y calidad de carne.
+            </div>
+            <p class="precio-puerquito">$170 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+        <div class="puerquito-en-venta">
+            <img src="berkshire.jpeg" alt="Puerquito Berkshire">
+            <div class="descripcion-puerquito">
+                <strong>Berkshire</strong><br>
+                Conocido por su carne oscura, jugosa y sabrosa.<br>
+                Considerado una raza premium.
+            </div>
+            <p class="precio-puerquito">$200 USD</p>
+            <button class="boton-comprar">Contactar para Comprar</button>
+        </div>
+    </div>
+    <button class="regresar-button" onclick="location.href='2p.html'">Regresar</button>
+</body>
+</html>
